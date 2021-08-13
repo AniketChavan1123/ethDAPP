@@ -51,7 +51,7 @@ class RequestNew extends Component{
             <h3>Create a Request for your Campaign</h3>
             <Form onSubmit={this.onSubmit} error={!!this.state.errorMsg}>
                 <Form.Field>
-                    <label>Description</label>
+                    <label style={{color:"white"}}>Description</label>
                     <Input
                         value={this.state.description}
                         onChange={(event)=>this.setState({description:event.target.value})}
@@ -59,7 +59,7 @@ class RequestNew extends Component{
                 </Form.Field>
 
                 <Form.Field>
-                    <label>Value in ether</label>
+                    <label style={{color:"white"}}>Value in ether</label>
                     <Input
                         value={this.state.value}
                         label="ether"
@@ -69,7 +69,7 @@ class RequestNew extends Component{
                 </Form.Field>
 
                 <Form.Field>
-                    <label>Recipient</label>
+                    <label style={{color:"white"}}>Recipient</label>
                     <Input
                         value={this.state.recipient}
                         onChange={(event)=>this.setState({recipient:event.target.value})}
