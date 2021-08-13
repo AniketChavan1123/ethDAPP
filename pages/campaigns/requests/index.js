@@ -9,7 +9,7 @@ import campaign from '../../../ethereum/campaign';
 class requestIndex extends Component{
   
     static async getInitialProps(props){
-        const address=props.query.address;
+        const address=props.query.address||0xf2f4f4163749b5d564402363421D8FbD8D9a2c89;
         const campaign=Campaign(address);
         const requestCount=await campaign.methods.gerRequestCount().call();
         const approversCount=await campaign.methods.approversCount().call();

@@ -19,7 +19,7 @@ class RequestNew extends Component{
     }
 
     static async getInitialProps(props){
-        const address=props.query.address;
+        const address=props.query.address||0xf2f4f4163749b5d564402363421D8FbD8D9a2c89;
         return {address};       // send address as props property to RequestNew Component
     }
     onSubmit =async (event)=>{
