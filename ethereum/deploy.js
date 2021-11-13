@@ -14,7 +14,8 @@ const compiledFactory = require("./build/CampaignFactory.json");
 const provider = new HDWalletProvider(
   "tube tobacco goat adjust soul adjust surface consider room apart mask erosion",
   // remember to change this to your own phrase!
-  "https://rinkeby.infura.io/v3/5db396ea7bd048fd93ed09cb1928d1a1"
+  //"https://rinkeby.infura.io/v3/5db396ea7bd048fd93ed09cb1928d1a1"
+  "https://rinkeby.infura.io/v3/559558ff318e4abf858994f84250026a"
   // remember to change this to your own endpoint!
 );
 const web3 = new Web3(provider);
